@@ -1,33 +1,174 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  color: #676767;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+body{
+  background-color: #F5F5F5;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+.page{
+  max-width: 1200px;
+  width: 100%;
+  display:flex ;
+  flex-direction: column;
+  margin: 0px;
+}
+.head{
+  color: #676767;
+  font-size: 32px;
+  font-weight: bold;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro{
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C6998F;
+}
+.start{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  button {
+      width: 200px;
+      height: 50px;
+      font-weight: bold;
+      border-radius: 120px;
+      color: #676767;
+      font-size: 20px;
+      border: none;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+  
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+.account{
+  max-width: 1200px;
+  width: 100%;
+  display:flex ;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+}
+.account-input{
+  flex: auto;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: 15px;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  background-color: #ffffff;
+  max-width: 900px;
+  width: 100%;
+  height: 120px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.account-input-balance {
+  width:135px;
+  height: 50px;
+  border: 2px solid #cd8474 ;
+  border-radius: 100px;
+  text-align: center;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+}
+.account-input-item{
+  width: 180px;
+  height: 46px;
+  border: 2px solid #cd8474 ;
+  border-radius: 100px;
+  text-align: center;
+  padding: 0px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+}
+.account-input button{
+  width:135px;
+  height: 50px;
+  border: 2px solid #cd8474 ;
+  border-radius: 100px;
+  text-align: center;
+  padding: 0px;
+  background-color: #cd8474;
+  color: #ffffff;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.account-list{
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  margin: 15px;
+  background-color: #ffffff;
+  max-width: 900px;
+  height: 400px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.account-list-item{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin: 15px;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  background-color: #ffffff;
+  max-width: 900px;;
+  border-radius: 10px;
+}
+
+.account-list-delete{
+  width:135px;
+  height: 50px;
+  border: 2px solid #BFBFBF ;
+  border-radius: 100px;
+  text-align: center;
+  padding: 0px;
+  background-color: #BFBFBF;
+  color: #ffffff;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+
+
+
+.account-sumup{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 15px;
+  align-items: center;
+  button {
+      width: 200px;
+      height: 50px;
+      font-weight: bold;
+      border-radius: 120px;
+      color: #676767;
+      font-size: 20px;
+      border: none;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+      margin: 5px;
+      cursor: pointer;
   }
 }
