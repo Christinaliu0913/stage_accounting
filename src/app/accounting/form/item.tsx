@@ -5,9 +5,11 @@
 //資料型態
     //接口 
 interface InputData {
-    type: 'income'|'expense';
+    id:string;
+    balanceType: 'income'|'expense';
     price: number;
-    cat: string;
+    category: string;
+    createdAt:string;
 }
 //使用接口類型
 interface ItemProps{
@@ -18,13 +20,12 @@ interface ItemProps{
 
 //接受input, ondelete兩個props，從input中獲得三個屬性
 const Item: React.FC<ItemProps> = ({input, onDelete})=>{
-    const {type,price,cat} = input;
-
+    const {balanceType,price,category} = input;
     return(
         <div className='account-list-item'>
-            <div className="account-list-balance" style={{color: type ==='income'?'#8EB16C':'#CD8474'}}>{ type ==='income' ?'收入' :'支出'}</div>
+            <div className="account-list-balance" style={{color: balanceType ==='income'?'#8EB16C':'#CD8474'}}>{ balanceType ==='income' ?'收入' :'支出'}</div>
             <div>{price}</div>
-            <div>{cat}</div>
+            <div>{category}</div>
             <button className='account-list-delete' onClick={onDelete}>刪除</button>
         </div>
     )

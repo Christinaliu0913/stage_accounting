@@ -1,9 +1,9 @@
 import "../globals.css";
-import App from '../component/app'
+import App from './form/app'
 
 const Home = () => {
   return(
-    <div>
+    <div >
      <App/>
     </div>
   );
