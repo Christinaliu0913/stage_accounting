@@ -8,13 +8,13 @@ import { getFirestore } from "firebase/firestore";
 
 //web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCYPFBChZINTwvC0JZ9h6RARcLLkBaHiUY",
-  authDomain: "wedo-d6284.firebaseapp.com",
-  projectId: "wedo-d6284",
-  storageBucket: "wedo-d6284.appspot.com",
-  messagingSenderId: "671306263884",
-  appId: "1:671306263884:web:801cc98d5f42561fba33e9",
-  measurementId: "G-T9KR6MED2T"
+  apiKey: "AIzaSyD8ph539zu1Jz2jwmJk8TvV2NQ5V4lrmls",
+  authDomain: "account-week2.firebaseapp.com",
+  projectId: "account-week2",
+  storageBucket: "account-week2.appspot.com",
+  messagingSenderId: "141620433578",
+  appId: "1:141620433578:web:5ef2f140f4b51eb304f6d3",
+  measurementId: "G-S2K5JRZBW6"
 };
 
 // Initialize Firebase
