@@ -25,7 +25,6 @@ const SignIn = () =>{
     useEffect(() => {
         console.log('這個函式有跑嗎？')
         const checkAuth = auth.onAuthStateChanged (async (user) => {
-            setIsLoading(true)
             if(user){
                 const userDocRef = doc(db, 'users',user.uid);
                 const userDocSnap = await getDoc(userDocRef);
