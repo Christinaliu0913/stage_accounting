@@ -1,6 +1,5 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
@@ -8,13 +7,13 @@ import { getFirestore } from "firebase/firestore";
 
 //web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyD8ph539zu1Jz2jwmJk8TvV2NQ5V4lrmls",
-  authDomain: "account-week2.firebaseapp.com",
-  projectId: "account-week2",
-  storageBucket: "account-week2.appspot.com",
-  messagingSenderId: "141620433578",
-  appId: "1:141620433578:web:5ef2f140f4b51eb304f6d3",
-  measurementId: "G-S2K5JRZBW6"
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID ,
+  measurementId: process.env.MEASUREMENT_ID
 };
 
 // Initialize Firebase
