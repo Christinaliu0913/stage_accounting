@@ -7,13 +7,12 @@ import { getFirestore } from "firebase/firestore";
 
 //web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyD8ph539zu1Jz2jwmJk8TvV2NQ5V4lrmls",
-  authDomain: "account-week2.firebaseapp.com",
-  projectId: "account-week2",
-  storageBucket: "account-week2.appspot.com",
-  messagingSenderId: "141620433578",
-  appId: "1:141620433578:web:5ef2f140f4b51eb304f6d3",
-  measurementId: "G-S2K5JRZBW6"
+  apiKey: "AIzaSyC63_O--Vxyy4q9SMbXXWimdTvvn0NBU_4",
+  authDomain: "wehelp-stage3.firebaseapp.com",
+  projectId: "wehelp-stage3",
+  storageBucket: "wehelp-stage3.appspot.com",
+  messagingSenderId: "203766807433",
+  appId: "1:203766807433:web:c5ffad4c8c28953d4f7f58"
 };
 
 
